@@ -74,7 +74,7 @@ hoc_blockchian.add_block({
 })
 
 pp(hoc_blockchian)
-pp(hoc_blockchian.valid?)
+pp(hoc_blockchian.valid?) #true
 
 # Can not modify block
 hoc_blockchian.chain[1].data = {
@@ -82,5 +82,5 @@ hoc_blockchian.chain[1].data = {
   to: 'Hacker',
   amount: 1000
 }
-pp(hoc_blockchian.valid?)
+pp(hoc_blockchian.valid?) #false
 
